@@ -8,3 +8,6 @@ C:\Users\hj666\Desktop\프로그래밍\careful-clock\sources\Careful-Clock\Caref
 C:\Users\hj666\Desktop\프로그래밍\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.csproj.CoreCompileInputs.cache
 C:\Users\hj666\Desktop\프로그래밍\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.exe
 C:\Users\hj666\Desktop\프로그래밍\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.pdb
+C:\Users\hj666\Desktop\프로그래밍\careful-clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hj666\Desktop\프로그래밍\careful-clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hj666\Desktop\프로그래밍\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.csproj.CopyComplete
