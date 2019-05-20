@@ -25,9 +25,11 @@ namespace Careful_Clock
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            WebClient client = new WebClient();
-            client.DownloadFile("file.json","https://api.myjson.com/bins/1b2lp2");
-            JObject json = JObject.Parse(System.IO.File.ReadAllText("file.json"));
+            WebClient cl = new WebClient();
+            cl.Encoding = Encoding.UTF8;
+            string a = cl.DownloadString("https://api.myjson.com/bins/1b2lp2");
+            textBox1.Text = a;
+            JObject json = JObject.Parse(a);
             textBox1.Text = json["0"]["시작"].ToString();
             textBox2.Text = json["0"]["끝"].ToString();
             textBox3.Text = json["1"]["시작"].ToString();
@@ -44,6 +46,11 @@ namespace Careful_Clock
             textBox14.Text = json["6"]["끝"].ToString();
             textBox15.Text = json["7"]["시작"].ToString();
             textBox16.Text = json["7"]["끝"].ToString();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

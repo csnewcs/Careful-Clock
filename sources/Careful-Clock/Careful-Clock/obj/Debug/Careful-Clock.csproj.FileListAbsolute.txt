@@ -11,3 +11,16 @@ C:\Users\hj666\Desktop\프로그래밍\careful-clock\sources\Careful-Clock\Caref
 C:\Users\hj666\Desktop\프로그래밍\careful-clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Newtonsoft.Json.dll
 C:\Users\hj666\Desktop\프로그래밍\careful-clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Newtonsoft.Json.xml
 C:\Users\hj666\Desktop\프로그래밍\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.csproj.CopyComplete
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Careful-Clock.exe.config
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Careful-Clock.exe
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Careful-Clock.pdb
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Newtonsoft.Json.dll
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Newtonsoft.Json.xml
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.csprojAssemblyReference.cache
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful_Clock.Form1.resources
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful_Clock.Properties.Resources.resources
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.csproj.GenerateResource.cache
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.csproj.CoreCompileInputs.cache
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.csproj.CopyComplete
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.exe
+C:\Users\배재현\Careful-Clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.pdb

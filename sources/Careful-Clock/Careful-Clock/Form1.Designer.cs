@@ -46,6 +46,7 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // timer1
@@ -54,6 +55,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(41, 33);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 21);
@@ -152,24 +154,35 @@
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(41, 222);
+            this.textBox15.Location = new System.Drawing.Point(41, 223);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(100, 21);
             this.textBox15.TabIndex = 14;
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(147, 222);
+            this.textBox16.Location = new System.Drawing.Point(147, 223);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(100, 21);
             this.textBox16.TabIndex = 15;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(41, 250);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(206, 44);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "수정하기";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(573, 333);
+            this.ClientSize = new System.Drawing.Size(294, 333);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.textBox14);
@@ -187,7 +200,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
-            this.Text = "Careful Clock";
+            this.Text = "Careful Clock (시간관리자)";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -213,6 +226,7 @@
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Button button1;
     }
 }
 
