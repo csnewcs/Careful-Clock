@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // circularProgressBar1
@@ -63,6 +66,11 @@
             this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(0);
             this.circularProgressBar1.Value = 100;
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 10000;
+            this.timer2.Tick += new System.EventHandler(this.Timer2_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -79,6 +87,8 @@
         #endregion
 
         private CircularProgressBar.CircularProgressBar circularProgressBar1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
