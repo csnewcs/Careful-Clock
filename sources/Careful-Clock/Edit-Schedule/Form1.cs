@@ -30,6 +30,7 @@ namespace Edit_Schedule
             client.Encoding = Encoding.UTF8;
             client.Headers.Add("Content-Type", "application/json");
             client.UploadString("https://api.myjson.com/bins/1b2lp2", "Put", richTextBox1.Text);
+            MessageBox.Show("업로드가 완료되었습니다","끝");
         }
 
         private void Button2_Click(object sender, EventArgs e)
