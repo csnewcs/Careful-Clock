@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Careful-Clock Admin", "Care
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Careful-Clock User", "Careful-Clock User\Careful-Clock User.csproj", "{8D5D471B-0E96-4861-9A51-A0BBAA7030A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edit-Schedule", "Edit-Schedule\Edit-Schedule.csproj", "{2077050D-0F41-46CE-B359-0FB65399811F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8D5D471B-0E96-4861-9A51-A0BBAA7030A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D5D471B-0E96-4861-9A51-A0BBAA7030A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D5D471B-0E96-4861-9A51-A0BBAA7030A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2077050D-0F41-46CE-B359-0FB65399811F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2077050D-0F41-46CE-B359-0FB65399811F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2077050D-0F41-46CE-B359-0FB65399811F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2077050D-0F41-46CE-B359-0FB65399811F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

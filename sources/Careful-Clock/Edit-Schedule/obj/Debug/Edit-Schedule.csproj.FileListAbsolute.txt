@@ -1,0 +1,10 @@
+C:\Users\배재현\careful-clock\sources\Careful-Clock\Edit-Schedule\bin\Debug\Edit-Schedule.exe.config
+C:\Users\배재현\careful-clock\sources\Careful-Clock\Edit-Schedule\bin\Debug\Edit-Schedule.exe
+C:\Users\배재현\careful-clock\sources\Careful-Clock\Edit-Schedule\bin\Debug\Edit-Schedule.pdb
+C:\Users\배재현\careful-clock\sources\Careful-Clock\Edit-Schedule\obj\Debug\Edit-Schedule.csprojAssemblyReference.cache
+C:\Users\배재현\careful-clock\sources\Careful-Clock\Edit-Schedule\obj\Debug\Edit_Schedule.Form1.resources
+C:\Users\배재현\careful-clock\sources\Careful-Clock\Edit-Schedule\obj\Debug\Edit_Schedule.Properties.Resources.resources
+C:\Users\배재현\careful-clock\sources\Careful-Clock\Edit-Schedule\obj\Debug\Edit-Schedule.csproj.GenerateResource.cache
+C:\Users\배재현\careful-clock\sources\Careful-Clock\Edit-Schedule\obj\Debug\Edit-Schedule.csproj.CoreCompileInputs.cache
+C:\Users\배재현\careful-clock\sources\Careful-Clock\Edit-Schedule\obj\Debug\Edit-Schedule.exe
+C:\Users\배재현\careful-clock\sources\Careful-Clock\Edit-Schedule\obj\Debug\Edit-Schedule.pdb
