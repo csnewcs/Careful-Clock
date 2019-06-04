@@ -398,20 +398,22 @@
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("굴림", 19F);
             this.button3.Location = new System.Drawing.Point(22, 333);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(135, 44);
             this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
+            this.button3.Text = "적용";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("굴림", 19F);
             this.button4.Location = new System.Drawing.Point(177, 333);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(135, 44);
             this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
+            this.button4.Text = "새로고침";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // label9
