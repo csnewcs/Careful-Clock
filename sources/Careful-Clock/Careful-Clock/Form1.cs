@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using Newtonsoft.Json.Linq;
 using System.Data;
 using System.Drawing;
@@ -182,6 +182,31 @@ namespace Careful_Clock
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Hashtable hashtable = new Hashtable();
+            DateTime dateTime = DateTime.Now;
+            string[] time = (textBox20.Text).Split(':');
+            dateTime = new DateTime(dateTime.Year, dateTime.Month, dateTime.Day, int.Parse(time[0]), int.Parse(time[1]), dateTime.Second);
+            int @class = int.Parse(textBox19.Text) * 2;
+            int classtime = int.Parse(textBox17.Text);
+            int classminute = int.Parse(textBox18.Text);
+
+            hashtable.Add(0, $"{dateTime.Hour}:{dateTime.Minute}");
+
+            for (int i = 2; i < @class; i += 2)
+            {
+                hashtable.Add(i,$"{dateTime.Hour}:{dateTime.Minute}");
+            }
         }
     }
 }
