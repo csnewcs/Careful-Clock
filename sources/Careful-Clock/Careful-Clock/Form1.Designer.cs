@@ -59,16 +59,17 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -357,12 +358,13 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label13);
+            this.tabPage2.Controls.Add(this.textBox21);
             this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.textBox20);
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.textBox19);
             this.tabPage2.Controls.Add(this.textBox18);
@@ -375,11 +377,29 @@
             this.tabPage2.Text = "일괄성정";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("굴림", 20F);
+            this.label12.Location = new System.Drawing.Point(68, 12);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(212, 27);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "등교 시간(시:분)";
+            // 
+            // textBox20
+            // 
+            this.textBox20.Font = new System.Drawing.Font("굴림", 15F);
+            this.textBox20.Location = new System.Drawing.Point(40, 42);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(273, 30);
+            this.textBox20.TabIndex = 0;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("굴림", 20F);
-            this.label11.Location = new System.Drawing.Point(96, 253);
+            this.label11.Location = new System.Drawing.Point(96, 205);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(149, 27);
             this.label11.TabIndex = 7;
@@ -389,7 +409,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("굴림", 20F);
-            this.label10.Location = new System.Drawing.Point(85, 180);
+            this.label10.Location = new System.Drawing.Point(85, 142);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(176, 27);
             this.label10.TabIndex = 6;
@@ -399,29 +419,19 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("굴림", 20F);
-            this.label9.Location = new System.Drawing.Point(85, 110);
+            this.label9.Location = new System.Drawing.Point(85, 78);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(176, 27);
             this.label9.TabIndex = 5;
             this.label9.Text = "수업 시간(분)";
             // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("굴림", 19F);
-            this.button4.Location = new System.Drawing.Point(177, 333);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(135, 44);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "새로고침";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("굴림", 19F);
-            this.button3.Location = new System.Drawing.Point(22, 333);
+            this.button3.Location = new System.Drawing.Point(101, 347);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(135, 44);
-            this.button3.TabIndex = 3;
+            this.button3.TabIndex = 5;
             this.button3.Text = "적용";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
@@ -429,7 +439,7 @@
             // textBox19
             // 
             this.textBox19.Font = new System.Drawing.Font("굴림", 15F);
-            this.textBox19.Location = new System.Drawing.Point(39, 283);
+            this.textBox19.Location = new System.Drawing.Point(39, 235);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(273, 30);
             this.textBox19.TabIndex = 3;
@@ -438,7 +448,7 @@
             // textBox18
             // 
             this.textBox18.Font = new System.Drawing.Font("굴림", 15F);
-            this.textBox18.Location = new System.Drawing.Point(39, 210);
+            this.textBox18.Location = new System.Drawing.Point(39, 172);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(273, 30);
             this.textBox18.TabIndex = 2;
@@ -447,29 +457,30 @@
             // textBox17
             // 
             this.textBox17.Font = new System.Drawing.Font("굴림", 15F);
-            this.textBox17.Location = new System.Drawing.Point(39, 140);
+            this.textBox17.Location = new System.Drawing.Point(39, 108);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(273, 30);
             this.textBox17.TabIndex = 1;
             this.textBox17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // label12
+            // label13
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("굴림", 20F);
-            this.label12.Location = new System.Drawing.Point(68, 34);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(212, 27);
-            this.label12.TabIndex = 9;
-            this.label12.Text = "등교 시간(시:분)";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("굴림", 20F);
+            this.label13.Location = new System.Drawing.Point(35, 268);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(282, 27);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "점심시간 바로 전 교시";
             // 
-            // textBox20
+            // textBox21
             // 
-            this.textBox20.Font = new System.Drawing.Font("굴림", 15F);
-            this.textBox20.Location = new System.Drawing.Point(40, 64);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(273, 30);
-            this.textBox20.TabIndex = 0;
+            this.textBox21.Font = new System.Drawing.Font("굴림", 15F);
+            this.textBox21.Location = new System.Drawing.Point(40, 299);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(273, 30);
+            this.textBox21.TabIndex = 4;
+            this.textBox21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
             // Form1
             // 
@@ -522,7 +533,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox18;
@@ -532,6 +542,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox21;
     }
 }
 
