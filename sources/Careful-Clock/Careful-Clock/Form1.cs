@@ -195,6 +195,40 @@ namespace Careful_Clock
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            button1.Enabled = false;
+            try
+            {
+                json["0"] = textBox1.Text;
+                json["1"] = textBox2.Text;
+                json["2"] = textBox3.Text;
+                json["3"] = textBox4.Text;
+                json["4"] = textBox5.Text;
+                json["5"] = textBox6.Text;
+                json["6"] = textBox7.Text;
+                json["7"] = textBox8.Text;
+                json["8"] = textBox9.Text;
+                json["9"] = textBox12.Text;
+                json["10"] = textBox13.Text;
+                json["11"] = textBox10.Text;
+                json["12"] = textBox11.Text;
+                json["13"] = textBox14.Text;
+                json["14"] = textBox15.Text;
+                json["15"] = textBox16.Text;
+            }
+            catch { }
+            WebClient upload = new WebClient();
+            upload.Encoding = Encoding.UTF8;
+            upload.Headers.Add("Content-Type", "application/json");
+            upload.UploadString("https://api.myjson.com/bins/1b2lp2", "Put", json.ToString());
+            MessageBox.Show("업로드가 완료되었습니다.","완료");
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            WebClient client = new WebClient();
+            client.Encoding = Encoding.UTF8;
+            string read = client.DownloadString("https://api.myjson.com/bins/1b2lp2");
+            json = JObject.Parse(read);
             try
             {
                 textBox1.Text = json["0"].ToString();
@@ -275,40 +309,6 @@ namespace Careful_Clock
                 textBox16.Text = json["15"].ToString();
             }
             catch { textBox16.Text = ""; }
-            WebClient upload = new WebClient();
-            upload.Encoding = Encoding.UTF8;
-            upload.Headers.Add("Content-Type","application/json");
-            upload.UploadString("https://api.myjson.com/bins/1b2lp2", "Put",json.ToString());
-            button1.Enabled = false;
-            MessageBox.Show("업로드가 완료되었습니다.","완료");
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            WebClient client = new WebClient();
-            client.Encoding = Encoding.UTF8;
-            string read = client.DownloadString("https://api.myjson.com/bins/1b2lp2");
-            json = JObject.Parse(read);
-            try
-            {
-                textBox1.Text = json["0"].ToString();
-                textBox2.Text = json["1"].ToString();
-                textBox3.Text = json["2"].ToString();
-                textBox4.Text = json["3"].ToString();
-                textBox5.Text = json["4"].ToString();
-                textBox6.Text = json["5"].ToString();
-                textBox7.Text = json["6"].ToString();
-                textBox8.Text = json["7"].ToString();
-                textBox9.Text = json["8"].ToString();
-                textBox12.Text = json["9"].ToString();
-                textBox13.Text = json["10"].ToString();
-                textBox10.Text = json["11"].ToString();
-                textBox11.Text = json["12"].ToString();
-                textBox14.Text = json["13"].ToString();
-                textBox15.Text = json["14"].ToString();
-                textBox16.Text = json["15"].ToString();
-            }
-            catch { }
             button1.Enabled = false;
         }
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)

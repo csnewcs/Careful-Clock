@@ -13,10 +13,8 @@ namespace Careful_Clock_User
     //https://api.myjson.com/bins/1b2lp2
     public partial class Form1 : Form
     {
-        private string[] pclass;
-        private byte phour;
-        private byte pminute;
-        private byte pnow;
+        private Hashtable Hashtable = new Hashtable();
+        private int[] timer = new int[] { };
         public Form1()
         {
             InitializeComponent();
@@ -29,17 +27,34 @@ namespace Careful_Clock_User
             client.Encoding = Encoding.UTF8;
             string time = client.DownloadString(adress);
             JObject json = JObject.Parse(time);
-            Hashtable hashtable = new Hashtable();
-
+            for (int i = 0;i < json.Count ;i++)
+            {
+                string toint = json[i.ToString()].ToString();
+                string[] split = toint.Split(':');
+                Hashtable.Add(i.ToString(), int.Parse(split[0]) * 60 + int.Parse(split[1]) );
+                circularProgressBar1.Text = (int.Parse(split[0]) * 60 + int.Parse(split[1])).ToString();
+            }
         }
 
         private void Timer2_Tick(object sender, EventArgs e)
         {
-            Hashtable hashtable = new Hashtable();
+            Hashtable = new Hashtable();
+            string adress = "https://api.myjson.com/bins/1b2lp2";
             WebClient client = new WebClient();
-            DateTime time = DateTime.Now;
-            byte nowhour = (byte)time.Hour;
-            byte nowminute = (byte)time.Minute;
+            client.Encoding = Encoding.UTF8;
+            string time = client.DownloadString(adress);
+            JObject json = JObject.Parse(time);
+            for (int i = 0; i < json.Count; i++)
+            {
+                string toint = json[i.ToString()].ToString();
+                string[] split = toint.Split(':');
+                Hashtable.Add(i.ToString(), int.Parse(split[0]) * 60 + int.Parse(split[1]));
+                circularProgressBar1.Text = (int.Parse(split[0]) * 60 + int.Parse(split[1])).ToString();
+            }
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
 
         }
     }
