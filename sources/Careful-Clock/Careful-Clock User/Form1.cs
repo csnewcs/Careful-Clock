@@ -13,9 +13,10 @@ namespace Careful_Clock_User
     //https://api.myjson.com/bins/1b2lp2
     public partial class Form1 : Form
     {
+        int present = 0;
         int test = 0;
         private Hashtable Hashtable = new Hashtable();
-        private int[] timer = new int[] { };
+
         public Form1()
         {
             InitializeComponent();
@@ -34,12 +35,11 @@ namespace Careful_Clock_User
                 string[] split = toint.Split(':');
                 Hashtable.Add(i.ToString(), int.Parse(split[0]) * 60 + int.Parse(split[1]) );
             }
-            this.timer = new int[json.Count];
         }
 
         private void Timer2_Tick(object sender, EventArgs e)
         {
-            Hashtable = new Hashtable();
+            Hashtable.Clear();
             string adress = "https://api.myjson.com/bins/1b2lp2";
             WebClient client = new WebClient();
             client.Encoding = Encoding.UTF8;
@@ -51,12 +51,12 @@ namespace Careful_Clock_User
                 string[] split = toint.Split(':');
                 Hashtable.Add(i.ToString(), int.Parse(split[0]) * 60 + int.Parse(split[1]));
             }
+            
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            circularProgressBar1.Value = test;
-            test++;
+
         }
     }
 }
