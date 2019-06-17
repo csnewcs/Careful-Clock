@@ -363,6 +363,7 @@ namespace Careful_Clock
             upload.Encoding = Encoding.UTF8;
             upload.Headers.Add("Content-Type", "application/json");
             upload.UploadString("https://api.myjson.com/bins/1b2lp2", "Put", jObject.ToString());
+            MessageBox.Show("업로드가 완료되었습니다.","완료");
         }
     }
 }
