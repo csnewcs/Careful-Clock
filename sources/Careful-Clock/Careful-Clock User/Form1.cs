@@ -6,6 +6,7 @@ using System.Net;
 using Newtonsoft.Json.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Careful_Clock_User
@@ -92,6 +93,21 @@ namespace Careful_Clock_User
             {
                 timer1.Stop();
                 MessageBox.Show("오늘자 시간표가 끝났습니다.","끝");
+            }
+        }
+        private void size(object sender, EventArgs e)
+        {
+            circularProgressBar1.Location = new Point((int)Math.Round(Size.Width * 0.036), (int)Math.Round(Size.Height * 0.01));
+            int[] vs = new int[2] { (int)Math.Round(Size.Width * 0.9), (int)Math.Round(Size.Height * 0.9) };
+            if (vs[0] >= vs[1])
+            {
+                circularProgressBar1.Size = new Size(vs[1], vs[1]);
+                circularProgressBar1.Location = new Point(circularProgressBar1.Location.X + (vs[0] - vs[1]) / 2, circularProgressBar1.Location.Y);
+            }
+            else
+            {
+                circularProgressBar1.Size = new Size(vs[0], vs[0]);
+                circularProgressBar1.Location = new Point(circularProgressBar1.Location.X, circularProgressBar1.Location.Y + (vs[1] - vs[0]) / 2);
             }
         }
     }
