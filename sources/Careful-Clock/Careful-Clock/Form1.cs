@@ -195,27 +195,73 @@ namespace Careful_Clock
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            json = new JObject();
             button1.Enabled = false;
-            try
+            if (!String.IsNullOrEmpty(textBox1.Text))
             {
-                json["0"] = textBox1.Text;
-                json["1"] = textBox2.Text;
-                json["2"] = textBox3.Text;
-                json["3"] = textBox4.Text;
-                json["4"] = textBox5.Text;
-                json["5"] = textBox6.Text;
-                json["6"] = textBox7.Text;
-                json["7"] = textBox8.Text;
-                json["8"] = textBox9.Text;
-                json["9"] = textBox12.Text;
-                json["10"] = textBox13.Text;
-                json["11"] = textBox10.Text;
-                json["12"] = textBox11.Text;
-                json["13"] = textBox14.Text;
-                json["14"] = textBox15.Text;
-                json["15"] = textBox16.Text;
+                json.Add("0", textBox1.Text);
             }
-            catch { }
+            if (!String.IsNullOrEmpty(textBox2.Text))
+            {
+                json.Add("1", textBox2.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox3.Text))
+            {
+                json.Add("2", textBox3.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox4.Text))
+            {
+                json.Add("3", textBox4.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox5.Text))
+            {
+                json.Add("4", textBox5.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox6.Text))
+            {
+                json.Add("5", textBox6.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox7.Text))
+            {
+                json.Add("6", textBox7.Text);
+            }
+
+            if (!String.IsNullOrEmpty(textBox8.Text))
+            {
+                json.Add("7", textBox8.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox9.Text))
+            {
+                json.Add("8", textBox9.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox10.Text))
+            {
+                json.Add("11", textBox10.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox11.Text))
+            {
+                json.Add("12", textBox11.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox12.Text))
+            {
+                json.Add("9", textBox12.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox13.Text))
+            {
+                json.Add("10", textBox13.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox14.Text))
+            {
+                json.Add("13", textBox14.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox15.Text))
+            {
+                json.Add("14", textBox15.Text);
+            }
+            if (!String.IsNullOrEmpty(textBox16.Text))
+            {
+                json.Add("15", textBox16.Text);
+            }
             WebClient upload = new WebClient();
             upload.Encoding = Encoding.UTF8;
             upload.Headers.Add("Content-Type", "application/json");

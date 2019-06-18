@@ -14,7 +14,6 @@ namespace Careful_Clock_User
     public partial class Form1 : Form
     {
         private int present = 0;
-        private int now = 0;
         private Hashtable Hashtable = new Hashtable();
         private Hashtable backup = new Hashtable();
         public Form1()
@@ -54,7 +53,7 @@ namespace Careful_Clock_User
             }
             if (Hashtable != backup)
             {
-                timer1.Start();
+               timer1.Start();
                 backup = Hashtable;
                 present = 0;
             }
@@ -62,23 +61,32 @@ namespace Careful_Clock_User
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
+            int now = present;
             TimeSpan span = new TimeSpan();
             try
             {
-                circularProgressBar1.Maximum = (int)Hashtable[present];
+                if (now == 0) { circularProgressBar1.Maximum = (int)Hashtable[now]; }
+                else { circularProgressBar1.Maximum = (int)Hashtable[now] - (int)Hashtable[now - 1]; }
                 try
                 {
                     DateTime timeone = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
                     DateTime timetwo = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, (int)Hashtable[present] / 60, (int)Hashtable[present] % 60, 0);
                     span = timetwo - timeone;
-                    circularProgressBar1.Value = DateTime.Now.Hour * 60 + DateTime.Now.Minute;
-                    if (circularProgressBar1.Value < 0) { int exit = int.Parse("exit!"); }
+                    circularProgressBar1.Text = $"{span}";
+                    if (now == 0)
+                    {
+                        circularProgressBar1.Value = DateTime.Now.Hour * 60 + DateTime.Now.Minute;
+                    }
+                    else
+                    {
+                        circularProgressBar1.Value = (DateTime.Now.Hour * 60 + DateTime.Now.Minute) - (int)Hashtable[now - 1];
+                    }
+                    if (circularProgressBar1.Value >= circularProgressBar1.Maximum) { int exit = int.Parse("exit!"); }
                 }
                 catch
                 {
                     present++;
                 }
-                circularProgressBar1.Text = $"{span}";
             }
             catch
             {
