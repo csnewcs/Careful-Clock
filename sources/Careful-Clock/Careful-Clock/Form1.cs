@@ -11,6 +11,7 @@ using System.Windows.Forms;
 namespace Careful_Clock
 {
     //https://api.myjson.com/bins/1b2lp2
+    //https://api.myjson.com/bins/ok3k1
     public partial class Form1 : Form
     {
         private JObject json = new JObject();
@@ -410,6 +411,17 @@ namespace Careful_Clock
             upload.Headers.Add("Content-Type", "application/json");
             upload.UploadString("https://api.myjson.com/bins/1b2lp2", "Put", jObject.ToString());
             MessageBox.Show("업로드가 완료되었습니다.","완료");
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            WebClient upload = new WebClient();
+            upload.Encoding = Encoding.UTF8;
+            upload.Headers.Add("Content-Type", "application/json");
+            JObject jObject = new JObject();
+            jObject.Add("restart",true);
+            upload.UploadString("https://api.myjson.com/bins/ok3k1", "Put", jObject.ToString());
+            MessageBox.Show("업로드가 완료되었습니다.", "완료");
         }
     }
 }

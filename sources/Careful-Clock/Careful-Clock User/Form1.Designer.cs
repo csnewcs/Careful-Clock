@@ -38,7 +38,7 @@
             // 
             this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.circularProgressBar1.AnimationSpeed = 50;
-            this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar1.BackColor = System.Drawing.Color.White;
             this.circularProgressBar1.Font = new System.Drawing.Font("굴림체", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.circularProgressBar1.ForeColor = System.Drawing.Color.Black;
             this.circularProgressBar1.InnerColor = System.Drawing.Color.White;
@@ -48,10 +48,10 @@
             this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar1.Name = "circularProgressBar1";
             this.circularProgressBar1.OuterColor = System.Drawing.Color.Lime;
-            this.circularProgressBar1.OuterMargin = -25;
-            this.circularProgressBar1.OuterWidth = 26;
+            this.circularProgressBar1.OuterMargin = -30;
+            this.circularProgressBar1.OuterWidth = 30;
             this.circularProgressBar1.ProgressColor = System.Drawing.Color.Gray;
-            this.circularProgressBar1.ProgressWidth = 25;
+            this.circularProgressBar1.ProgressWidth = 30;
             this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("굴림", 30F);
             this.circularProgressBar1.Size = new System.Drawing.Size(450, 450);
             this.circularProgressBar1.StartAngle = 270;
@@ -62,7 +62,7 @@
             this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
             this.circularProgressBar1.SuperscriptText = "";
             this.circularProgressBar1.TabIndex = 0;
-            this.circularProgressBar1.Text = "99:99";
+            this.circularProgressBar1.Text = "99:99:00";
             this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(0);
             this.circularProgressBar1.Value = 1;
             // 
@@ -91,6 +91,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Careful Clock User";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Resize += new System.EventHandler(this.size);
             this.ResumeLayout(false);

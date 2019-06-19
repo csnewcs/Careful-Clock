@@ -36,6 +36,10 @@ namespace Careful_Clock_User
                 Hashtable.Add(i, int.Parse(split[0]) * 60 + int.Parse(split[1]) );
             }
             backup = Hashtable;
+            JObject restart = JObject.Parse(client.DownloadString("https://api.myjson.com/bins/ok3k1"));
+            restart["restart"] = false;
+            client.Headers.Add("Content-Type", "application/json");
+            client.UploadString("https://api.myjson.com/bins/ok3k1", "Put", restart.ToString());
         }
 
         private void Timer2_Tick(object sender, EventArgs e)
@@ -44,6 +48,7 @@ namespace Careful_Clock_User
             string adress = "https://api.myjson.com/bins/1b2lp2";
             WebClient client = new WebClient();
             client.Encoding = Encoding.UTF8;
+            client.Headers.Add("Content-Type", "application/json");
             string time = client.DownloadString(adress);
             JObject json = JObject.Parse(time);
             for (int i = 0; i < json.Count; i++)
@@ -57,6 +62,11 @@ namespace Careful_Clock_User
                timer1.Start();
                 backup = Hashtable;
                 present = 0;
+            }
+            JObject restart = JObject.Parse(client.DownloadString("https://api.myjson.com/bins/ok3k1"));
+            if ((bool)restart["restart"])
+            {
+                Application.Restart();
             }
         }
 

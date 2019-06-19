@@ -59,6 +59,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -68,11 +70,12 @@
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -314,6 +317,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(0, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -376,6 +380,25 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "일괄성정";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("굴림", 20F);
+            this.label13.Location = new System.Drawing.Point(35, 268);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(282, 27);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "점심시간 바로 전 교시";
+            // 
+            // textBox21
+            // 
+            this.textBox21.Font = new System.Drawing.Font("굴림", 15F);
+            this.textBox21.Location = new System.Drawing.Point(40, 299);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(273, 30);
+            this.textBox21.TabIndex = 4;
+            this.textBox21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
             // label12
             // 
@@ -463,24 +486,26 @@
             this.textBox17.TabIndex = 1;
             this.textBox17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // label13
+            // tabPage3
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("굴림", 20F);
-            this.label13.Location = new System.Drawing.Point(35, 268);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(282, 27);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "점심시간 바로 전 교시";
+            this.tabPage3.Controls.Add(this.button4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(352, 405);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "기타 관리";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // textBox21
+            // button4
             // 
-            this.textBox21.Font = new System.Drawing.Font("굴림", 15F);
-            this.textBox21.Location = new System.Drawing.Point(40, 299);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(273, 30);
-            this.textBox21.TabIndex = 4;
-            this.textBox21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
+            this.button4.Font = new System.Drawing.Font("굴림", 19F);
+            this.button4.Location = new System.Drawing.Point(8, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(332, 63);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "프로그램 재부팅";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // Form1
             // 
@@ -489,6 +514,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(356, 426);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Careful Clock";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -497,6 +524,7 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -544,6 +572,8 @@
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button button4;
     }
 }
 
