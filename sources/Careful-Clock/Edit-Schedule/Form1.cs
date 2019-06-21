@@ -21,7 +21,11 @@ namespace Edit_Schedule
         {
             OpenFileDialog open = new OpenFileDialog();
             openFileDialog1.ShowDialog();
-            richTextBox1.Text = System.IO.File.ReadAllText(openFileDialog1.FileName);
+            try
+            {
+                richTextBox1.Text = System.IO.File.ReadAllText(openFileDialog1.FileName);
+            }
+            catch { }
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -44,8 +48,12 @@ namespace Edit_Schedule
         {
             SaveFileDialog save = new SaveFileDialog();
             saveFileDialog1.ShowDialog();
-            string path = saveFileDialog1.FileName;
-            System.IO.File.WriteAllText(path,richTextBox1.Text);
+            try
+            {
+                string path = saveFileDialog1.FileName;
+                System.IO.File.WriteAllText(path, richTextBox1.Text);
+            }
+            catch { }
         }
     }
 }
