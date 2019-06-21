@@ -39,5 +39,13 @@ namespace Edit_Schedule
             client.Encoding = Encoding.UTF8;
             richTextBox1.Text = client.DownloadString("https://api.myjson.com/bins/1b2lp2");
         }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog save = new SaveFileDialog();
+            saveFileDialog1.ShowDialog();
+            string path = saveFileDialog1.FileName;
+            System.IO.File.WriteAllText(path,richTextBox1.Text);
+        }
     }
 }

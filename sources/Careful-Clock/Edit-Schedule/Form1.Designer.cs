@@ -46,9 +46,13 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.Filter = "\"JSON파일|*.json|모둔 파일|*.*\"";
+            // 
             // openFileDialog1
             // 
-            this.openFileDialog1.Filter = "JSON파일|*.json|메모장 파일|*.txt";
+            this.openFileDialog1.Filter = "\"JSON파일|*.json|모둔 파일|*.*\"";
             this.openFileDialog1.Title = "json열기";
             // 
             // button1
@@ -89,6 +93,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "파일 저장";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // Form1
             // 
