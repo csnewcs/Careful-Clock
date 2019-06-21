@@ -417,10 +417,14 @@ namespace Careful_Clock
         {
             WebClient upload = new WebClient();
             upload.Encoding = Encoding.UTF8;
+            JObject jObject = JObject.Parse(upload.DownloadString("https://api.myjson.com/bins/ok3k1"));
+            JObject up = new JObject();
+            foreach (var token in jObject)
+            {
+                up.Add(token.Key, true);
+            }
             upload.Headers.Add("Content-Type", "application/json");
-            JObject jObject = new JObject();
-            jObject.Add("restart",true);
-            upload.UploadString("https://api.myjson.com/bins/ok3k1", "Put", jObject.ToString());
+            upload.UploadString("https://api.myjson.com/bins/ok3k1", "Put", up.ToString());
             MessageBox.Show("업로드가 완료되었습니다.", "완료");
         }
     }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Data;
+using System.Net.NetworkInformation;
 using System.Net;
 using Newtonsoft.Json.Linq;
 using System.Text;
@@ -37,7 +37,15 @@ namespace Careful_Clock_User
             }
             backup = Hashtable;
             JObject restart = JObject.Parse(client.DownloadString("https://api.myjson.com/bins/ok3k1"));
-            restart["restart"] = false;
+            string mac = NetworkInterface.GetAllNetworkInterfaces()[0].GetPhysicalAddress().ToString();
+            try
+            {
+                restart[mac] = false;
+            }
+            catch
+            {
+                restart.Add(mac,false);
+            }
             client.Headers.Add("Content-Type", "application/json");
             client.UploadString("https://api.myjson.com/bins/ok3k1", "Put", restart.ToString());
         }

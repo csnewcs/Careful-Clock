@@ -44,7 +44,7 @@
             this.circularProgressBar1.InnerColor = System.Drawing.Color.White;
             this.circularProgressBar1.InnerMargin = 2;
             this.circularProgressBar1.InnerWidth = -1;
-            this.circularProgressBar1.Location = new System.Drawing.Point(18, 5);
+            this.circularProgressBar1.Location = new System.Drawing.Point(18, 12);
             this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar1.Name = "circularProgressBar1";
             this.circularProgressBar1.OuterColor = System.Drawing.Color.Lime;
@@ -83,7 +83,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.ClientSize = new System.Drawing.Size(484, 484);
             this.ControlBox = false;
             this.Controls.Add(this.circularProgressBar1);
             this.MinimumSize = new System.Drawing.Size(500, 500);
