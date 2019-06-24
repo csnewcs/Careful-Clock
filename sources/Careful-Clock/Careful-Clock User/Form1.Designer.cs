@@ -47,7 +47,7 @@
             this.circularProgressBar1.Location = new System.Drawing.Point(18, 12);
             this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar1.Name = "circularProgressBar1";
-            this.circularProgressBar1.OuterColor = System.Drawing.Color.Gold;
+            this.circularProgressBar1.OuterColor = System.Drawing.Color.Lime;
             this.circularProgressBar1.OuterMargin = -30;
             this.circularProgressBar1.OuterWidth = 30;
             this.circularProgressBar1.ProgressColor = System.Drawing.Color.Silver;

@@ -72,6 +72,7 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -362,6 +363,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.checkBox1);
             this.tabPage2.Controls.Add(this.label13);
             this.tabPage2.Controls.Add(this.textBox21);
             this.tabPage2.Controls.Add(this.label12);
@@ -451,7 +453,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("굴림", 19F);
-            this.button3.Location = new System.Drawing.Point(101, 347);
+            this.button3.Location = new System.Drawing.Point(178, 347);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(135, 44);
             this.button3.TabIndex = 5;
@@ -506,6 +508,17 @@
             this.button4.Text = "프로그램 재부팅";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("굴림", 13F);
+            this.checkBox1.Location = new System.Drawing.Point(40, 361);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(135, 22);
+            this.checkBox1.TabIndex = 12;
+            this.checkBox1.Text = "아침자습시간";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -574,6 +587,7 @@
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

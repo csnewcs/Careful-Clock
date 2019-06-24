@@ -384,10 +384,21 @@ namespace Careful_Clock
             int classtime = int.Parse(textBox17.Text);
             int resttime = int.Parse(textBox18.Text);
             JObject jObject = new JObject();
-            hashtable.Add("0", $"{dateTime.Hour}:{dateTime.Minute}");
-            dateTime = dateTime.AddMinutes(20);
-            hashtable.Add("1", $"{dateTime.Hour}:{dateTime.Minute}");
-            for (int i = 2; i <= @class; i += 2)
+            int i = 0;
+            if (checkBox1.Checked)
+            {
+                hashtable.Add("0", $"{dateTime.Hour}:{dateTime.Minute}");
+                dateTime = dateTime.AddMinutes(20);
+                hashtable.Add("1", $"{dateTime.Hour}:{dateTime.Minute}");
+            }
+            else
+            {
+                hashtable.Add("0", "00:00");
+                dateTime = dateTime.AddMinutes(-10);
+                hashtable.Add("1", $"{dateTime.Hour}:{dateTime.Minute}");
+            }
+            i = 2;
+            for (; i <= @class; i += 2)
             {
                 if (i == int.Parse(textBox21.Text) * 2 + 2)
                 {
@@ -401,7 +412,7 @@ namespace Careful_Clock
                 dateTime = dateTime.AddMinutes(classtime);
                 hashtable.Add((i + 1).ToString(), $"{dateTime.Hour}:{dateTime.Minute}");
             }
-            for (int i = 0; i < hashtable.Count; i++ )
+            for (i = 0; i < hashtable.Count; i++ )
             {
                 string json = hashtable[i.ToString()].ToString();
                 jObject.Add(i.ToString(), hashtable[i.ToString()].ToString());
