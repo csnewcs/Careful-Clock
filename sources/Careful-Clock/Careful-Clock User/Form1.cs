@@ -33,7 +33,7 @@ namespace Careful_Clock_User
             {
                 string toint = json[i.ToString()].ToString();
                 string[] split = toint.Split(':');
-                Hashtable.Add(i, int.Parse(split[0]) * 60 + int.Parse(split[1]) );
+                Hashtable.Add(i, (int.Parse(split[0]) * 3600) + (int.Parse(split[1]) * 60));
             }
             backup = Hashtable;
             JObject restart = JObject.Parse(client.DownloadString("https://api.myjson.com/bins/ok3k1"));
@@ -63,7 +63,7 @@ namespace Careful_Clock_User
             {
                 string toint = json[i.ToString()].ToString();
                 string[] split = toint.Split(':');
-                Hashtable.Add(i, int.Parse(split[0]) * 60 + int.Parse(split[1]));
+                Hashtable.Add(i, (int.Parse(split[0]) * 3600) + (int.Parse(split[1]) * 60));
             }
             if (Hashtable != backup)
             {
@@ -89,16 +89,16 @@ namespace Careful_Clock_User
                 try
                 {
                     DateTime timeone = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
-                    DateTime timetwo = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, (int)Hashtable[present] / 60, (int)Hashtable[present] % 60, 0);
+                    DateTime timetwo = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, (int)Hashtable[present] / 3600, ((int)Hashtable[present] % 3600) / 60, 0);
                     span = timetwo - timeone;
                     circularProgressBar1.Text = $"{span}";
                     if (now == 0)
                     {
-                        circularProgressBar1.Value = DateTime.Now.Hour * 60 + DateTime.Now.Minute;
+                        circularProgressBar1.Value = DateTime.Now.Hour * 3600 + DateTime.Now.Minute * 60 + DateTime.Now.Second;
                     }
                     else
                     {
-                        circularProgressBar1.Value = (DateTime.Now.Hour * 60 + DateTime.Now.Minute) - (int)Hashtable[now - 1];
+                        circularProgressBar1.Value = (DateTime.Now.Hour * 3600 + DateTime.Now.Minute * 60 + DateTime.Now.Second) - (int)Hashtable[now - 1];
                     }
                     if (circularProgressBar1.Value >= circularProgressBar1.Maximum) { int exit = int.Parse("exit!"); }
                 }

@@ -38,7 +38,7 @@
             // 
             this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.circularProgressBar1.AnimationSpeed = 50;
-            this.circularProgressBar1.BackColor = System.Drawing.Color.White;
+            this.circularProgressBar1.BackColor = System.Drawing.Color.Black;
             this.circularProgressBar1.Font = new System.Drawing.Font("굴림체", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.circularProgressBar1.ForeColor = System.Drawing.Color.Black;
             this.circularProgressBar1.InnerColor = System.Drawing.Color.White;
@@ -80,9 +80,8 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(484, 484);
             this.ControlBox = false;
             this.Controls.Add(this.circularProgressBar1);
