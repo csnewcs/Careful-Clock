@@ -105,6 +105,14 @@ namespace Careful_Clock_User
                 catch
                 {
                     present++;
+                    if (present % 2 == 0)
+                    {
+                        label1.Text = $"{present / 2}교시 시작까지";
+                    }
+                    else
+                    {
+                        label1.Text = $"{present / 2}교시 종료까지";
+                    }
                 }
             }
             catch

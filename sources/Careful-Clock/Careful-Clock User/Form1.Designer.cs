@@ -32,6 +32,7 @@
             this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // circularProgressBar1
@@ -78,12 +79,25 @@
             this.timer2.Interval = 10000;
             this.timer2.Tick += new System.EventHandler(this.Timer2_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(145, 151);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(204, 37);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "0교시 시작까지";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(484, 484);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.circularProgressBar1);
             this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "Form1";
@@ -94,6 +108,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Resize += new System.EventHandler(this.size);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -102,6 +117,7 @@
         private CircularProgressBar.CircularProgressBar circularProgressBar1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
