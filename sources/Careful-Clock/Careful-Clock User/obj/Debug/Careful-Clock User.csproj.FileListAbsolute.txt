@@ -43,3 +43,18 @@ C:\Users\hj666\Desktop\프로그래밍\오픈소스 프로젝트\careful-clock\s
 C:\Users\hj666\Desktop\프로그래밍\오픈소스 프로젝트\careful-clock\sources\Careful-Clock\Careful-Clock User\obj\Debug\Careful-Clock User.csproj.CopyComplete
 C:\Users\hj666\Desktop\프로그래밍\오픈소스 프로젝트\careful-clock\sources\Careful-Clock\Careful-Clock User\obj\Debug\Careful-Clock User.exe
 C:\Users\hj666\Desktop\프로그래밍\오픈소스 프로젝트\careful-clock\sources\Careful-Clock\Careful-Clock User\obj\Debug\Careful-Clock User.pdb
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\bin\Debug\Careful-Clock User.exe.config
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\bin\Debug\Careful-Clock User.exe
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\bin\Debug\Careful-Clock User.pdb
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\bin\Debug\CircularProgressBar.dll
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\bin\Debug\WinFormAnimation.dll
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\obj\Debug\Careful-Clock User.csprojAssemblyReference.cache
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\obj\Debug\Careful_Clock_User.Form1.resources
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\obj\Debug\Careful_Clock_User.Properties.Resources.resources
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\obj\Debug\Careful-Clock User.csproj.GenerateResource.cache
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\obj\Debug\Careful-Clock User.csproj.CoreCompileInputs.cache
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\obj\Debug\Careful-Clock User.csproj.CopyComplete
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\obj\Debug\Careful-Clock User.exe
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock User\obj\Debug\Careful-Clock User.pdb

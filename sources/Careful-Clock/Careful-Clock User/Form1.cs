@@ -135,6 +135,7 @@ namespace Careful_Clock_User
                 circularProgressBar1.Size = new Size(vs[0], vs[0]);
                 circularProgressBar1.Location = new Point(circularProgressBar1.Location.X, circularProgressBar1.Location.Y + (vs[1] - vs[0]) / 2);
             }
+            label1.Location = new Point(circularProgressBar1.Location.X + circularProgressBar1.Size.Width / 2 - label1.Size.Width / 2, circularProgressBar1.Location.Y + circularProgressBar1.Height / 3 - label1.Size.Height / 2);
         }
     }
 }

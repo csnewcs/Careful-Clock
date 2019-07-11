@@ -37,3 +37,16 @@ C:\Users\hj666\Desktop\프로그래밍\오픈소스 프로젝트\careful-clock\s
 C:\Users\hj666\Desktop\프로그래밍\오픈소스 프로젝트\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock Admin.csproj.CopyComplete
 C:\Users\hj666\Desktop\프로그래밍\오픈소스 프로젝트\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.exe
 C:\Users\hj666\Desktop\프로그래밍\오픈소스 프로젝트\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.pdb
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Careful-Clock.exe.config
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Careful-Clock.exe
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Careful-Clock.pdb
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock Admin.csprojAssemblyReference.cache
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful_Clock.Form1.resources
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful_Clock.Properties.Resources.resources
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock Admin.csproj.GenerateResource.cache
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock Admin.csproj.CoreCompileInputs.cache
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock Admin.csproj.CopyComplete
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.exe
+C:\Users\hj666\Desktop\프로그래밍\오픈소스\careful-clock\sources\Careful-Clock\Careful-Clock\obj\Debug\Careful-Clock.pdb
