@@ -12,6 +12,7 @@ namespace Edit_Schedule
 {
     public partial class Form1 : Form
     {
+        string[] url = System.IO.File.ReadAllLines("url.txt");
         public Form1()
         {
             InitializeComponent();
@@ -33,7 +34,7 @@ namespace Edit_Schedule
             WebClient client = new WebClient();
             client.Encoding = Encoding.UTF8;
             client.Headers.Add("Content-Type", "application/json");
-            client.UploadString("https://api.myjson.com/bins/1b2lp2", "Put", richTextBox1.Text);
+            client.UploadString(url[0], "Put", richTextBox1.Text);
             MessageBox.Show("업로드가 완료되었습니다","끝");
         }
 
@@ -41,7 +42,7 @@ namespace Edit_Schedule
         {
             WebClient client = new WebClient();
             client.Encoding = Encoding.UTF8;
-            richTextBox1.Text = client.DownloadString("https://api.myjson.com/bins/1b2lp2");
+            richTextBox1.Text = client.DownloadString(url[0]);
         }
 
         private void Button4_Click(object sender, EventArgs e)

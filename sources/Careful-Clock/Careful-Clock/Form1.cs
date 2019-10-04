@@ -10,10 +10,9 @@ using System.Windows.Forms;
 
 namespace Careful_Clock
 {
-    //https://api.myjson.com/bins/1b2lp2
-    //https://api.myjson.com/bins/ok3k1
     public partial class Form1 : Form
     {
+        private string[] url = System.IO.File.ReadAllLines("url.txt");
         private JObject json = new JObject();
         public Form1()
         {
@@ -29,7 +28,7 @@ namespace Careful_Clock
         {
             WebClient client = new WebClient();
             client.Encoding = Encoding.UTF8;
-            string read = client.DownloadString("https://api.myjson.com/bins/1b2lp2");
+            string read = client.DownloadString(url[0]);
             json = JObject.Parse(read);
             try
             {
@@ -266,7 +265,7 @@ namespace Careful_Clock
             WebClient upload = new WebClient();
             upload.Encoding = Encoding.UTF8;
             upload.Headers.Add("Content-Type", "application/json");
-            upload.UploadString("https://api.myjson.com/bins/1b2lp2", "Put", json.ToString());
+            upload.UploadString(url[0], "Put", json.ToString());
             MessageBox.Show("업로드가 완료되었습니다.","완료");
         }
 
@@ -274,7 +273,7 @@ namespace Careful_Clock
         {
             WebClient client = new WebClient();
             client.Encoding = Encoding.UTF8;
-            string read = client.DownloadString("https://api.myjson.com/bins/1b2lp2");
+            string read = client.DownloadString(url[0]);
             json = JObject.Parse(read);
             try
             {
@@ -420,7 +419,7 @@ namespace Careful_Clock
             WebClient upload = new WebClient();
             upload.Encoding = Encoding.UTF8;
             upload.Headers.Add("Content-Type", "application/json");
-            upload.UploadString("https://api.myjson.com/bins/1b2lp2", "Put", jObject.ToString());
+            upload.UploadString(url[0], "Put", jObject.ToString());
             MessageBox.Show("업로드가 완료되었습니다.","완료");
         }
 
@@ -428,14 +427,14 @@ namespace Careful_Clock
         {
             WebClient upload = new WebClient();
             upload.Encoding = Encoding.UTF8;
-            JObject jObject = JObject.Parse(upload.DownloadString("https://api.myjson.com/bins/ok3k1"));
+            JObject jObject = JObject.Parse(upload.DownloadString(url[1]));
             JObject up = new JObject();
             foreach (var token in jObject)
             {
                 up.Add(token.Key, true);
             }
             upload.Headers.Add("Content-Type", "application/json");
-            upload.UploadString("https://api.myjson.com/bins/ok3k1", "Put", up.ToString());
+            upload.UploadString(url[1], "Put", up.ToString());
             MessageBox.Show("업로드가 완료되었습니다.", "완료");
         }
     }
